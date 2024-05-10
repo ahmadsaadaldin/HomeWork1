@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h4 style="text-align: center;">Registration form</h4>
+        <div style="display: flex; justify-content: center; flex-direction: column; align-items: center;">
+            <div style="width: 300px; position: relative; padding: 20px; border: 1px solid black; border-radius: 5px; background-color: pink; margin-bottom: 20px;">
+                <span style="position: absolute; top: -10px; left: 50%; background-color: white; padding: 0 10px; z-index: 1;">Personal Details</span>
+                <form style="position: relative; z-index: 2;">
+                    <label for="Fname">First name</label>
+                    <input type="text" id="Fname" name="Fname">
+                    <br><br>
+                    <label for="Lname">Last name</label>
+                    <input type="text" id="Lname" name="Lname">
+                    <br><br>
+                    <label style="margin: 10px;" for="Email">Email address</label>
+                    <input type="email" id="Email" name="Email">
+                    <br><br>
+                    <label for="gender">Gender</label>
+                    <input type="radio" id="male" name="gender" value="Male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="Female">
+                    <label for="female">Female</label>
+                </form>
+            </div>
+            <div style="width: 300px; position: relative; padding: 20px; border: 1px solid black; border-radius: 5px; background-color: pink; margin-bottom: 20px;">
+                <span style="position: absolute; top: -10px; left: 50%; background-color: pink; padding: 0 10px; z-index: 1;">Additional Details</span>
+                <form style="position: relative; z-index: 2;">
+                    <label for="city">city</label>
+                    <select id="city">
+                        <option value="amman">amman</option>
+                        <option value="irbid">irbid</option>
+                        <option value="aqaba">aqaba</option>
+                        <option value="alsalt">alsalt</option>
+                    </select>
+                    <br>
+                    <br>
+                    
+                </form>
+            </div>
+            <input type="submit" value="Submit">
+        </div>
+    </body>
+</html>
