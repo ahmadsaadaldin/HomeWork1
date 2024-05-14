@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        .container{
+            display: grid;
+            grid-template-rows:
+            auto auto  auto auto auto auto auto auto;
+            grid-template-columns: 
+            auto auto auto auto auto auto auto auto auto auto auto auto ;
+            gap: 5 px;
+            width: 98%;
+            height: 95vh;
+            background-color: red;
+            
+        }
+        .div-top{
+            margin: 10px;
+            background-color: #91D0FD;
+            border-radius: 5px;
+            grid-area: 1/1/span 1 /span 12;
+        }
+        .div-2-row-left{
+            margin: 10px;
+            background-color: #91D0FD;
+            border-radius: 5px;
+            grid-area: 2/1/span 1 /span 6;
+        }
+        .div-2-row-right{
+            margin: 10px;
+            background-color: #91D0FD;
+            border-radius: 5px;
+            grid-area: 2/7/span 1 /span 6;
+        }
+        .div-3-row-left{
+            margin: 10px;
+            background-color: #91D0FD;
+            border-radius: 5px;
+            grid-area: 3/1/span 1 /span 4;
+        }
+        .div-3-row-left-mid{
+            margin: 10px;
+            background-color: #91D0FD;
+            border-radius: 5px;
+            grid-area: 3/5/span 1 /span 4;
+        }
+        .div-3-row-right{
+            margin: 10px;
+            background-color: #91D0FD;
+            border-radius: 5px;
+            grid-area: 3/9/span 1 /span 4;
+        }
+        .div-4-row-left{
+            margin: 10px;
+            background-color: #91D0FD;
+            border-radius: 5px;
+            grid-area: 4/1/span 1 /span 3;
+        }
+        .div-4-row-left-mid{
+            margin: 10px;
+            background-color: #91D0FD;
+            border-radius: 5px;
+            grid-area: 4/4/span 1 /span 3;
+        }
+        .div-4-row-right-mid{
+            margin: 10px;
+            background-color: #91D0FD;
+            border-radius: 5px;
+            grid-area: 4/7/span 1 /span 3;
+        }
+        .div-4-row-right{
+            margin: 10px;
+            background-color: #91D0FD;
+            border-radius: 5px;
+            grid-area: 4/10/span 1 /span 3;
+        }
+       .div-5-left{
+        margin: 10px;
+            background-color: #91D0FD;
+            border-radius: 5px;
+            grid-area: 5/1/span 1 /span 2;
+       }
+       
+       .div-5-row-left-mid{
+        margin: 10px;
+            background-color: #91D0FD;
+            border-radius: 5px;
+            grid-area: 5/3/span 1 /span 2;
+       }
+       .div-5-row-mid{
+        margin: 10px;
+            background-color: #91D0FD;
+            border-radius: 5px;
+            grid-area: 5/5/span 1 /span 2;
+       }
+       .div-5-row-right-mid{
+        margin: 10px;
+            background-color: #91D0FD;
+            border-radius: 5px;
+            grid-area: 5/7/span 1 /span 2;
+       }
+       .div-5-row-right-mid2{
+        margin: 10px;
+            background-color: #91D0FD;
+            border-radius: 5px;
+            grid-area: 5/9/span 1 /span 2;
+       }
+       .div-5-row-right{
+        margin: 10px;
+            background-color: #91D0FD;
+            border-radius: 5px;
+            grid-area: 5/11/span 1 /span 2;
+       }
+       .div-6-row-1{
+        margin: 10px;
+            background-color: #91D0FD;
+            border-radius: 5px;
+            grid-area: 6/1/span 1 /span 1;
+       }
+       .div-6-row-2{
+        margin: 10px;
+            background-color: #91D0FD;
+            border-radius: 5px;
+            grid-area: 6/2/span 1 /span 1;
+       }
+       .div-6-row-3{
+        margin: 10px;
+            background-color: #91D0FD;
+            border-radius: 5px;
+            grid-area: 6/3/span 1 /span 1;
+       }
+       .div-6-row-4{
+        margin: 10px;
+            background-color: #91D0FD;
+            border-radius: 5px;
+            grid-area: 6/4/span 1 /span 1;
+       }
+       .div-6-row-5{
+        margin: 10px;
+            background-color: #91D0FD;
+            border-radius: 5px;
+            grid-area: 6/5/span 1 /span 1;
+       }
+       .div-6-row-6{
+        margin: 10px;
+            background-color: #91D0FD;
+            border-radius: 5px;
+            grid-area: 6/6/span 1 /span 1;
+       }
+       .div-6-row-7{
+        margin: 10px;
+            background-color: #91D0FD;
+            border-radius: 5px;
+            grid-area: 6/7/span 1 /span 1;
+       }
+       .div-6-row-8{
+        margin: 10px;
+            background-color: #91D0FD;
+            border-radius: 5px;
+            grid-area: 6/8/span 1 /span 1;
+       }
+       .div-6-row-9{
+        margin: 10px;
+            background-color: #91D0FD;
+            border-radius: 5px;
+            grid-area: 6/9/span 1 /span 1;
+       }
+       .div-6-row-10{
+        margin: 10px;
+            background-color: #91D0FD;
+            border-radius: 5px;
+            grid-area: 6/10/span 1 /span 1;
+       }
+       .div-6-row-11{
+        margin: 10px;
+            background-color: #91D0FD;
+            border-radius: 5px;
+            grid-area: 6/11/span 1 /span 1;
+       }
+       .div-6-row-12{
+        margin: 10px;
+            background-color: #91D0FD;
+            border-radius: 5px;
+            grid-area: 6/12/span 1 /span 1;
+       }
+       .div-7-row{
+        margin: 10px;
+            background-color: #91D0FD;
+            border-radius: 5px;
+            grid-area: 7/1/span 2 /span 12;
+       }
+       div{
+        text-align: center;
+        color: white;
+        font-size: 50px;
+       }
+
+    </style>
+    <body>
+        <div class="container">
+           <div class="div-top">50 gs is starter kit for the css grid</div>
+            <div class="div-2-row-left">1</div>
+            <div class="div-2-row-right">2</div>
+            <div class="div-3-row-left">1</div>
+            <div class="div-3-row-left-mid">2</div>
+            <div class="div-3-row-right">3</div>
+            <div class="div-4-row-left">1</div>
+            <div class="div-4-row-left-mid">2</div>
+            <div class="div-4-row-right-mid">3</div>
+            <div class="div-4-row-right">4</div>
+            <div class="div-5-left">1</div>
+            <div class="div-5-row-left-mid">2</div>
+            <div class="div-5-row-mid">3</div>
+            <div class="div-5-row-right-mid">4</div>
+            <div class="div-5-row-right-mid2">5</div>
+            <div class="div-5-row-right">6</div>
+            <div class="div-6-row-1">1</div>
+            <div class="div-6-row-2">2</div>
+            <div class="div-6-row-3">3</div>
+            <div class="div-6-row-4">4</div>
+            <div class="div-6-row-5">5</div>
+            <div class="div-6-row-6">6</div>
+            <div class="div-6-row-7">7</div>
+            <div class="div-6-row-8">8</div>
+            <div class="div-6-row-9">9</div>
+            <div class="div-6-row-10">10</div>
+            <div class="div-6-row-11">11</div>
+            <div class="div-6-row-12">12</div>
+            <div class="div-7-row">why 60?<br>becuase number 60 is divisible by 2,3,4,5,6</div>
+        </div>
+    </body>
+</html>
