@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        *{padding: 0; margin: 0;}
+        .container{
+            width: 100%;
+            height: 100vh;
+        }
+        .container1{
+            display: grid;
+            width: 100%;
+            height: 30vh;
+            grid-template-columns: repeat(6,1fr);
+            grid-template-rows: repeat(2,1fr);
+            gap: 5px;
+            background-color: #EDEDED;
+        }
+        .container2{
+            display: grid;
+            width: 100%;
+            height: 70vh;
+            grid-template-columns: repeat(6,1fr);
+            grid-template-rows: repeat(3,1fr);
+            gap: 10px;
+        
+        }
+        @media (max-width: 750px){
+        .container1{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(2,1fr);
+        background-color: white;
+        height:126vh;
+        width: 100vw;
+        padding: 1%;
+        }
+        .container2{
+            display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(2,1fr);
+        background-color: white;
+        height:126vh;
+        width: 100vw;
+        padding: 1%;    
+
+
+        }
+    
+    }
+        .box1{
+            margin: 10px;
+            display: grid;
+            background-color: #27A9E3;
+            grid-area:1/1/span 1/ span 1;
+        }
+        .box2{
+            display: grid;
+            margin: 10px;
+            background-color: #28B779;
+            grid-area:1/2/span 1/ span 2;
+        }
+        .box3{
+            display: grid;
+            margin: 10px;
+            background-color: #FFB848;
+            grid-area:1/4/span 1/ span 1;
+        }
+        .box5{
+            display: grid;
+            margin: 10px;
+            background-color: #DA542E;
+            grid-area:1/5/span 1/ span 1;
+        }
+        .box6{
+            display: grid;
+            margin: 10px;
+            background-color: #2255A4;
+            grid-area:1/6/span 1/ span 1;
+        }
+        .box7{
+            display: grid;
+            margin: 10px;
+            background-color: #DA542E;
+            grid-area:2/1/span 1/ span 2;
+        }
+        .box8{
+            margin: 10px;
+            display: grid;
+            background-color: #2255A4;
+            grid-area:2/3/span 1/ span 1;
+        }
+        .box9{
+            display: grid;
+            margin: 10px;
+            background-color: #28B779;
+            grid-area:2/5/span 1/ span 1;
+        }
+        .box10{
+            display: grid;
+            margin: 10px;
+            background-color: #FFB848;
+            grid-area:2/6/span 1/ span 1;
+        }
+        .box11   {
+            display: grid;
+            margin: 10px;
+            background-color: #27A9E3;
+            grid-area:2/4/span 1/ span 1;
+        }
+        .div-img{
+            display: grid;
+            grid-area: 1/1/span 3/span 4;
+            background-color: red;
+        }
+        .black-box-1{
+            display: grid;
+            grid-area: 1/5/span 1 /span 1;
+            background-color: #343A40;
+        }
+        .black-box-2{
+            display: grid;
+            grid-area: 1/6/span 1 /span 1;
+            background-color: #343A40;
+        }
+        .black-box-3{
+            display: grid;
+            grid-area: 2/5/span 1 /span 1;
+            background-color: #343A40;
+        }
+        .black-box-4{
+            display: grid;
+            grid-area: 2/6/span 1 /span 1;
+            background-color: #343A40;
+        }
+        .black-box-5{
+            display: grid;
+            grid-area: 3/5/span 1 /span 1;
+            background-color: #343A40;
+        }
+        .black-box-6{
+            display: grid;
+            grid-area: 3/6/span 1 /span 1;
+            background-color: #343A40;
+        }
+        p{
+            color: white;
+        }
+    </style>
+    <body>
+        <div class="container">
+            <div class="container1">
+                <div class="box1" style="display: flex; justify-content: center ;flex-direction: column;align-items: center;">
+                    <img src="icon1.png" alt="" width="50px" height="50px">
+                    <p>DashBoard</p>
+                </div>
+                <div class="box2"style="display: flex; justify-content: center ;flex-direction: column;align-items: center;">
+                    <img src="icon2.png" alt="" width="50px" height="50px">
+                    <p>Charts</p>
+                </div>
+                <div class="box3"style="display: flex; justify-content: center ;flex-direction: column;align-items: center;">
+                    <img src="icon 3.png" alt="" width="50px" height="50px">
+                    <p>Widgets</p>
+                </div>
+                <div class="box5"style="display: flex; justify-content: center ;flex-direction: column;align-items: center;">
+                    <img src="icon4.png" alt="" width="50px" height="50px">
+                    <p>tables</p>
+                </div>
+                <div class="box6" style="display: flex; justify-content: center ;flex-direction: column;align-items: center;">
+                    <img src="icon 5.png" alt="" width="50px" height="50px">
+                    <p>full width</p>
+                </div>
+                <div class="box7"style="display: flex; justify-content: center ;flex-direction: column;align-items: center;">
+                    <img src="icon 6.png" alt="" width="50px" height="50px">
+                    <p>Forms</p>
+                </div>
+                <div class="box8"style="display: flex; justify-content: center ;flex-direction: column;align-items: center;">
+                    <img src="icon7.png" alt="" width="50px" height="50px">
+                    <p>Buttons</p>
+                </div>  
+                <div class="box9" style="display: flex; justify-content: center ;flex-direction: column;align-items: center;">
+                    <img src="icon8.png" alt="" width="50px" height="50px">
+                    <p>Calender </p>
+                </div>
+                <div class="box10" style="display: flex; justify-content: center ;flex-direction: column;align-items: center;">
+                    <img src="icon9.png" alt="" width="50px" height="50px">
+                    <p>Errors</p>
+                </div>
+                <div class="box11"style="display: flex; justify-content: center ;flex-direction: column;align-items: center;">
+                    <img src="icon1.png" alt="" width="50px" height="50px">
+                    <p>Elements</p>
+                </div>
+            </div>
+            <div class="container2">
+            
+                <div class="div-img">
+                    <img src="analysis.png" alt="" width="100%" height="460vh">
+                </div>
+                <div class="black-box-1" style="display: flex; padding-top: 10%  ;flex-direction: column;align-items: center;">
+                    <img src="person.png" alt="" width="30%" height="40vh">
+                    <p style="text-align: center;"><br>2450 <br> <br> Total Users</p>
+                </div>
+                <div class="black-box-2"style="display: flex; padding-top: 10%  ;flex-direction: column;align-items: center;">
+                    <img src="plus.png" alt="" width="30%" height="40vh">
+                    <p style="text-align: center;"><br>120 <br> <br> New Users</p>
+                </div>
+                <div class="black-box-3"style="display: flex; padding-top: 10%  ;flex-direction: column;align-items: center;">
+                    <img src="tag.png" alt="" width="30%" height="40vh">
+                    <p style="text-align: center;"><br>9540 <br> <br> Total Orders</p>
+                </div>
+                <div class="black-box-4"style="display: flex; padding-top: 10%  ;flex-direction: column;align-items: center;">
+                    <img src="cart.png" alt="" width="30%" height="40vh">
+                    <p style="text-align: center;"><br>656 <br> <br> Total Shop</p>
+                </div>
+                <div class="black-box-5" style="display: flex; padding-top: 10%  ;flex-direction: column;align-items: center;">
+                    <img src="box.png" alt="" width="30%" height="40vh">
+                    <p style="text-align: center;"><br>100 <br> <br> Pending Orders</p>
+                </div>
+                <div class="black-box-6"style="display: flex; padding-top: 10%  ;flex-direction: column;align-items: center;">
+                    <img src="glob.png" alt="" width="30%" height="40vh">
+                    <p style="text-align: center;"><br>8540 <br> <br> Online Orders</p>
+                </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

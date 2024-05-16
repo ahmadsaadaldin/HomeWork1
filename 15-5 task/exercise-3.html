@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        *{padding: 0;
+        margin: 0;
+        }
+        .container{
+            height: 82vh;
+            width: 96%;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(3,1fr);
+            gap: 10px;
+            padding: 2%;
+        }
+        @media (max-width: 900px) {
+        .container {
+            h1{font-size: 2vw;}
+            p{font-size:1vw}
+        }
+}
+        .text-area{
+            grid-area: 1/1/span 1/span 3;
+            
+        }
+        .box-right{
+            grid-area: 1/4/span 3/span 1;
+            background-color: #333333;
+        }
+        .box-1{
+            grid-area: 2/1/span 1 /span 1;
+        }
+        .box-2{
+            grid-area: 2/2/span 1 /span 1;
+        }
+        .box-3{
+            grid-area: 2/3/span 1 /span 1;
+
+        }
+        .box-4{
+            grid-area: 3/1/span 1 /span 1;
+
+        }
+        .box-5{
+            grid-area: 3/2 /span 1 /span 1;
+
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+            }
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: #111;
+        }
+        p{
+            color: #9B9C9C;
+        }
+    </style>
+    <body>
+        <ul>
+            <li><a href="">My Website</a></li>
+            <li style="float: right;"><a href="">link 1</a></li>
+            <li style="float: right;"><a href="">link 2</a></li>
+            <li style="float: right;"><a href="">link 3</a></li>
+        </ul>
+        <div class="container">
+        <div class="text-area" >
+               <h1>this is main heading</h1> 
+               <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe eius voluptatum exercitationem 
+                reiciendis vitae quas molestias perspiciatis porro sint sit?
+                Repudiandae eos quasi debitis omnis deleniti quas quam doloribus sapiente?
+                <br><br>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe eius voluptatum exercitationem 
+                reiciendis vitae quas molestias perspiciatis porro sint sit?
+                Repudiandae eos quasi debitis omnis deleniti quas quam doloribus sapiente?
+                </p>
+        </div>
+        <div class="box-right" style="border: black solid 3px;"><p style="color: white;">have you discovered all the other excellent content on this website?</p></div>
+        <div class="box-1" style="border: black solid 1px;">
+            <div style="height: 30%;background-color: #333333;padding-left: 5%;color: white;">
+            <h1>card one</h1>
+            </div>
+            <div style="padding: 5%;">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet exercitationem numquam expedita aspernatur
+                , consequatur voluptatum obcaecati explicabo 
+            </p>
+            </div>
+        </div>
+        <div class="box-2"style="border: black solid 3px;">
+            <div style="height: 30%;background-color: #333333;padding-left: 5%;color: white;">
+                <h1>card two</h1>
+                </div>
+                <div style="padding: 5%;">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet exercitationem numquam expedita aspernatur
+                    , consequatur voluptatum obcaecati explicabo 
+                </p>
+                </div>
+        </div>
+        <div class="box-3" style="border: black solid 3px;">
+            <div style="height: 30%;background-color: #333333;padding-left: 5%;color: white;">
+                <h1>card three</h1>
+                </div>
+                <div style="padding: 5%;">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet exercitationem numquam expedita aspernatur
+                    , consequatur voluptatum obcaecati explicabo 
+                </p>
+                </div>
+        </div>
+        <div class="box-4" style="border: black solid 3px;">
+            <div style="height: 30%;background-color: #333333;padding-left: 5%;color: white;">
+                <h1>card four</h1>
+                </div>
+                <div style="padding: 5%;">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet exercitationem numquam expedita aspernatur
+                    , consequatur voluptatum obcaecati explicabo 
+                </p>
+                </div></div>
+        <div class="box-5" style="border: black solid 3px;">
+            <div style="height: 30%;background-color: #333333;padding-left: 5%;color: white;">
+                <h1>card five</h1>
+                </div>
+                <div style="padding: 5%;">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet exercitationem numquam expedita aspernatur
+                    , consequatur voluptatum obcaecati explicabo 
+                </p>
+                </div></div>
+        </div>
+    </body>
+</html>
