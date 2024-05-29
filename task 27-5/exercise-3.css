@@ -1,0 +1,34 @@
+.container{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(1,1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.card-1{
+grid-area: 1/1/span 1 span 1;
+height: 30%;
+width: 100%; 
+border: 1px solid gray;   
+}
+.card-2{
+    grid-area: 1/2/span 1 span 1;
+    height: 30%;
+    width: 100%;    
+    border: 1px solid gray; 
+    }
+.card-3{
+        grid-area: 1/3/span 1 span 1;
+        height: 30%;
+        width: 100%;    
+        border: 1px solid gray; 
+
+    }
+.p-gray{
+        padding-left: 55%;
+        color: gray;
+        margin-top: 0;
+    }
