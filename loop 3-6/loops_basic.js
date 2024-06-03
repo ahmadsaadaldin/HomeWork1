@@ -40,7 +40,7 @@ for (i = number; i > 0; i--) {
 }
 console.log(fac);
 // 7- Write a program that prints the Fibonacci series up to a certain number entered by the user using a while loop.
-var limit = prompt("Enter the limit for Fibonacci series");
+var limit = prompt("Enter the limit number");
 var a = 0, b = 1, nextTerm;
 nextTerm = a + b;
 while (nextTerm <= limit) {
